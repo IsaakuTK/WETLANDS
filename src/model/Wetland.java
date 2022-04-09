@@ -44,82 +44,166 @@ public class Wetland {
         }
     }
 
+    
+    /** 
+     * @return String
+     */
     public String getName() {
         return this.name;
     }
 
+    
+    /** 
+     * @param name
+     */
     public void setName(String name) {
         this.name = name;
     }
 
+    
+    /** 
+     * @return TypeU
+     */
     public TypeU getUbication() {
         return this.ubication;
     }
 
+    
+    /** 
+     * @param ubication
+     */
     public void setUbication(TypeU ubication) {
         this.ubication = ubication;
     }
 
+    
+    /** 
+     * @return TypeW
+     */
     public TypeW getType() {
         return this.type;
     }
 
+    
+    /** 
+     * @param type
+     */
     public void setType(TypeW type) {
         this.type = type;
     }
 
+    
+    /** 
+     * @return double
+     */
     public double getKm2() {
         return this.km2;
     }
 
+    
+    /** 
+     * @param km2
+     */
     public void setKm2(double km2) {
         this.km2 = km2;
     }
 
+    
+    /** 
+     * @return String
+     */
     public String getUrl() {
         return this.url;
     }
 
+    
+    /** 
+     * @param url
+     */
     public void setUrl(String url) {
         this.url = url;
     }
 
+    
+    /** 
+     * @return boolean
+     */
     public boolean isProtectedArea() {
         return this.protectedArea;
     }
 
+    
+    /** 
+     * @return boolean
+     */
     public boolean getProtectedArea() {
         return this.protectedArea;
     }
 
+    
+    /** 
+     * @param protectedArea
+     */
     public void setProtectedArea(boolean protectedArea) {
         this.protectedArea = protectedArea;
     }
 
+    
+    /** 
+     * @return int
+     */
     public int getLikes() {
         return this.likes;
     }
 
+    
+    /** 
+     * @param likes
+     */
     public void setLikes(int likes) {
         this.likes = likes;
     }
 
+    
+    /** 
+     * @return Event[]
+     */
     public Event[] getEvent() {
         return this.event;
     }
 
+    
+    /** 
+     * @param event
+     */
     public void setEvent(Event[] event) {
         this.event = event;
     }
 
+    
+    /** 
+     * @return Specie[]
+     */
     public Specie[] getSpecie() {
         return this.specie;
     }
 
+    
+    /** 
+     * @param specie
+     */
     public void setSpecie(Specie[] specie) {
         this.specie = specie;
     }
 
+    
+    /** 
+     * @param p
+     * @param k
+     * @param m
+     * @param t
+     * @return String
+     */
     public String addSpecie(String p, String k, boolean m, int t){
         String message="Specie register successfully";
         boolean seguir=true;
@@ -133,6 +217,16 @@ public class Wetland {
         return message;
         }
     }
+    
+    /** 
+     * @param n
+     * @param d
+     * @param m
+     * @param y
+     * @param p
+     * @param desc
+     * @return String
+     */
     public String addEvent(String n, int d, int m, int y, double p, int desc){
         String message="Event register successfully";
         boolean seguir=true;
@@ -146,6 +240,10 @@ public class Wetland {
         return message;
         }
     }
+    
+    /** 
+     * @return int
+     */
     public int consultQuantityEspecieFl(){
         int cont=0;
         {
@@ -157,6 +255,10 @@ public class Wetland {
         }
         return cont;
     }
+    
+    /** 
+     * @return int
+     */
     public int consultQuantityEspecieFa(){
         int cont=0;
         {
@@ -169,6 +271,11 @@ public class Wetland {
         return cont;
     }
 
+    
+    /** 
+     * @param name
+     * @return boolean
+     */
     public boolean searchName(String name){
         boolean ans=false;
         {
@@ -181,6 +288,11 @@ public class Wetland {
         }
     }
     
+    
+    /** 
+     * @param y
+     * @return int
+     */
     public int getNumberMaint(int y){
         int cont=0;
         {

@@ -79,7 +79,6 @@ import model.*;
       * preCondition: <br>
       * postCondition: <br>
       *@return a object type WetlandController.
-      * Salidas: <br>
        */
 
         public static WetlandController registrarWetlandController(){
@@ -91,8 +90,7 @@ import model.*;
       *Name: addWetland<br>
       * preCondition: The data ingressed by the user was correct (the number 1 in the list). <br>
       * postCondition: Tell user if the wetland have been registed. <br>
-      *@return register or not.
-      * Salidas: <br>
+      *@return String
        */
 
         public static String addWetland(WetlandController a){
@@ -135,12 +133,11 @@ import model.*;
         }
 
       /**
-      *Name: amnt5<br>
+      *Name: addSpecie<br>
       * preCondition: The data ingressed by the user was correct. <br>
       * postCondition: Amount of papayas left were calculated. <br>
       *@param cont int to see the actual number of papayas in the array.
-      *@return amount amount!="".
-      * Salidas: <br>
+      *@return String
        */
 
         public static String addSpecie(WetlandController a){
@@ -171,12 +168,11 @@ import model.*;
     }
 
     /**
-      *Name: amnt5<br>
+      *Name: addEvent<br>
       * preCondition: The data ingressed by the user was correct. <br>
       * postCondition: Amount of papayas left were calculated. <br>
       *@param cont int to see the actual number of papayas in the array.
-      *@return amount amount!="".
-      * Salidas: <br>
+      *@return String
        */
 
         public static String addEvent(WetlandController a){
@@ -201,12 +197,11 @@ import model.*;
     }
 
     /**
-      *Name: amnt5<br>
+      *Name: menosEspecie<br>
       * preCondition: The data ingressed by the user was correct. <br>
       * postCondition: Amount of papayas left were calculated. <br>
       *@param cont int to see the actual number of papayas in the array.
-      *@return amount amount!="".
-      * Salidas: <br>
+      *@return String
        */
 
     public static String menosEspecie(WetlandController a){
@@ -215,12 +210,11 @@ import model.*;
     }
 
     /**
-      *Name: amnt5<br>
+      *Name: masEspecie<br>
       * preCondition: The data ingressed by the user was correct. <br>
       * postCondition: Amount of papayas left were calculated. <br>
       *@param cont int to see the actual number of papayas in the array.
-      *@return amount amount!="".
-      * Salidas: <br>
+      *@return String
        */
 
     public static String masEspecie(WetlandController a){
@@ -229,12 +223,11 @@ import model.*;
     }
 
     /**
-      *Name: amnt5<br>
+      *Name: allInfo<br>
       * preCondition: The data ingressed by the user was correct. <br>
       * postCondition: Amount of papayas left were calculated. <br>
       *@param cont int to see the actual number of papayas in the array.
-      *@return amount amount!="".
-      * Salidas: <br>
+      *@return String
        */
 
     public static String allInfo(WetlandController a){
@@ -243,12 +236,11 @@ import model.*;
     }
 
     /**
-      *Name: amnt5<br>
+      *Name: searchSpecie<br>
       * preCondition: The data ingressed by the user was correct. <br>
       * postCondition: Amount of papayas left were calculated. <br>
       *@param cont int to see the actual number of papayas in the array.
-      *@return amount amount!="".
-      * Salidas: <br>
+      *@return String
        */
 
     public static String searchSpecie(WetlandController a){
@@ -259,12 +251,11 @@ import model.*;
     }
 
     /**
-      *Name: amnt5<br>
+      *Name: maintenment<br>
       * preCondition: The data ingressed by the user was correct. <br>
       * postCondition: Amount of papayas left were calculated. <br>
       *@param cont int to see the actual number of papayas in the array.
-      *@return amount amount!="".
-      * Salidas: <br>
+      *@return String
        */
       
     public static String maintenment(WetlandController a){

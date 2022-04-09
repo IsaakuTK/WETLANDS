@@ -16,6 +16,16 @@ public class WetlandController {
         wetlands=new Wetland[MAXWL];
         this.name="Santiago de Cali";
     }
+    
+    /** 
+     * @param n
+     * @param u
+     * @param t
+     * @param km2
+     * @param url
+     * @param prot
+     * @return String
+     */
     public String addWetland(String n, int u, int t, double km2, String url, boolean prot){
         boolean continuar=true;
     String message="Wetland is now registed";
@@ -36,6 +46,11 @@ public class WetlandController {
     return message;
     }
 
+    
+    /** 
+     * @param n
+     * @return boolean
+     */
     public boolean existWetland(String n){
         boolean resultado=false;        
         for(int i=0;i<MAXWL && resultado==false; i++){
@@ -45,14 +60,31 @@ public class WetlandController {
         return resultado;
      }
 
+    
+    /** 
+     * @return Wetland[]
+     */
     public Wetland[] getWetland() {
         return this.wetlands;
     }
 
+    
+    /** 
+     * @param wetlands
+     */
     public void setWetland(Wetland[] wetlands) {
         this.wetlands = wetlands;
     }
 
+    
+    /** 
+     * @param p
+     * @param k
+     * @param m
+     * @param t
+     * @param h
+     * @return String
+     */
     public String addSpecie(String p, String k, boolean m, int t, String h){    
         String message="You cant add a specie in this wetland";
             int w=searchWetland(h);
@@ -65,6 +97,11 @@ public class WetlandController {
         return message;
     }
 
+    
+    /** 
+     * @param h
+     * @return int
+     */
     public int searchWetland(String h){    
         int w=-1;
         boolean seguir=true;
@@ -82,6 +119,17 @@ public class WetlandController {
         return w;
     }
 
+    
+    /** 
+     * @param n
+     * @param d
+     * @param m
+     * @param y
+     * @param p
+     * @param desc
+     * @param h
+     * @return String
+     */
     public String addEvent(String n, int d, int m, int y, double p, int desc, String h){    
         String message="You cant add a Event in this wetland";
             int w=searchWetland(h);
@@ -92,6 +140,10 @@ public class WetlandController {
             }
         return message;
     }
+    
+    /** 
+     * @return String
+     */
     public String viewWetlands(){
         String message="";
         for(int i=0; i<MAXWL;i++)
@@ -103,6 +155,10 @@ public class WetlandController {
         }
         return message;
     }
+    
+    /** 
+     * @return String
+     */
     public String consultMenosEspecieFlora(){
         String message="";
         String name="";
@@ -120,6 +176,10 @@ public class WetlandController {
         message="The Wetland with less species of flora: "+name; 
         return message;
     }
+    
+    /** 
+     * @return String
+     */
     public String consultMasEspecieFauna(){
         String message="";
         String name="";
@@ -138,6 +198,10 @@ public class WetlandController {
         return message;
     }
 
+    
+    /** 
+     * @return String
+     */
     public String consultAllInfo(){
         String message="";
         for(int i=0; i<MAXWL;i++)
@@ -149,6 +213,11 @@ public class WetlandController {
         }
         return message;
     }
+    
+    /** 
+     * @param name
+     * @return String
+     */
     public String consultSpecie(String name){
         String message="The specie is in the wetland(s): ";
         for(int i=0; i<MAXWL;i++)
@@ -164,6 +233,11 @@ public class WetlandController {
         }
         return message;
     }
+    
+    /** 
+     * @param y
+     * @return String
+     */
     public String countMaintenment(int y){
         String message="";
         for(int i=0; i<MAXWL;i++)
@@ -176,6 +250,11 @@ public class WetlandController {
         return message;
     }
 
+    
+    /** 
+     * @param u
+     * @return String
+     */
     public String qPublic(int u){
         String message="";
         int cont=0;
